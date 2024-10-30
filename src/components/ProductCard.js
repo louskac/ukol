@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductCard = ({ product }) => {
   return (
-    <div className="w-52 shadow-lg rounded-lg text-left p-2">
+    <div className="sm:w-52 shadow-lg rounded-lg sm:text-left text-center p-2">
       <img 
         src={product.image} 
         alt={product.name} 
@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
       />
       <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
       <p className="text-gray-500 text-sm mb-4">{product.subtitle}</p>
-      <div className="flex justify-left items-center mb-2">
+      <div className="flex sm:justify-left justify-center items-center mb-2">
         <div className="flex text-green-500">
           {[...Array(5)].map((_, index) => (
             <span key={index}>★</span>
