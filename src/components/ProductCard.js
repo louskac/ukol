@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
       />
       <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
       <p className="text-gray-500 text-sm mb-4">{product.subtitle}</p>
-      <div className="flex sm:justify-left justify-center items-center mb-2">
+      <div className="flex sm:justify-start justify-center items-center mb-2">
         <div className="flex text-green-500">
           {[...Array(5)].map((_, index) => (
             <span key={index}>★</span>
